@@ -12,8 +12,7 @@ fn main() {
 
         println!("Please input your guess: {}", guess);
 
-        io::stdin().read_line(&mut guess)
-            .expect("Failed to read line");
+        io::stdin().read_line(&mut guess).expect("Failed to read line");
 
         let guess: u32 = match guess.trim().parse() {
             Ok(if_is_the_good_type_of_data) => if_is_the_good_type_of_data,

@@ -5,10 +5,7 @@ fn main() {
     shadowing();
     data_types();
     functions();
-    if_control_flow();
-    loop_control_flow();
-    while_control_flow();
-    for_control_flow();
+    control_flow();
 
 }
 
@@ -125,6 +122,14 @@ fn function_with_return_values() -> i32 {
 }
 
 // CONTROL FLOW
+fn control_flow() {
+
+    if_control_flow();
+    loop_control_flow();
+    while_control_flow();
+    for_control_flow();
+
+}
 
 // *If control flow*
 // An if expression allows you branch your code depending on conditions.

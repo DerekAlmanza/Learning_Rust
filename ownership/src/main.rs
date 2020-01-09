@@ -15,9 +15,9 @@ fn main() {
     let gives_ownership_from_function = gives_ownership();
     let normal_string = String::from("hello");
     let takes_the_ownership_value = takes_and_gives_back
-                                    (gives_ownership_from_function);
+                                    (&gives_ownership_from_function);
     
-    //println!("{}", gives_ownership_from_function);
+    println!("{}", gives_ownership_from_function);
     println!("{}", normal_string);
     println!("{}", takes_the_ownership_value);
 
@@ -33,7 +33,9 @@ fn gives_ownership() -> String {
 
 }
 
-fn takes_and_gives_back(some_string: String) -> String {
+// & is defined as reference, we use this for take a value without 
+// possess it. And &mut in case of you want that your reference to be mutable.
+fn takes_and_gives_back(some_string: &String) -> &String { // some_string is a reference to String.
 
     some_string
 

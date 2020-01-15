@@ -2,7 +2,7 @@ fn main() {
     // Ownership.
 
     //Variable scope.  // `random_variable` is not valid here, it’s not yet declared
-    let random_variable = "Hello world"; // random_variable is not valid here, it’s not yet declared
+    let random_variable = String::from("Hello world"); // random_variable is not valid here, it’s not yet declared
 
     let mut s1 = String::from("hello");
     s1.push_str(", world");
@@ -21,6 +21,9 @@ fn main() {
     println!("{}", normal_string);
     println!("{}", takes_the_ownership_value);
 
+    string_slices();
+
+
 
 } // The random_variable scope is now over.
 
@@ -38,5 +41,16 @@ fn gives_ownership() -> String {
 fn takes_and_gives_back(some_string: &String) -> &String { // some_string is a reference to String.
 
     some_string
+
+}
+
+// *String slices*
+fn string_slices() {
+
+    let hello_world_string = String::from("hello world");
+    let len = hello_world_string.len();
+    let hello = &hello_world_string[0..len]; // The references borrows their ownership for the first byte to end of the string.
+    let hello2 = &hello_world_string[..]; //This is equal as the line above.
+    println!("{}", hello);
 
 }

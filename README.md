@@ -45,7 +45,17 @@ A repository created for learn and review the basic concepts for Rust. This code
 
 * Ownership.
   
-  We learned the ownership concept,as well the borrowing and the slices cconcept. These concepts guarantee the security of our program. The details of concepts be in the file completely in Spanish with the name of `ownership.md`.
+  We learned the ownership concept,as well the borrowing and the slices cconcept. These concepts guarantee the security of our program. The details of concepts be in the file completely in Spanish with the name of `ownership.md`.    
+  
+***
+  
+* Structs.
+
+  In this lesson we learned the strcuts definition; To   define a struct, we put in the keyboard `struct` and the  name of     structure. Inside of the curly brackets, we  define the names and the data types of the pieces of data.   Let's call this as  *fields*.
+  We also learned:
+  * Print the fields of structs with `#[derive(Debug)]` syntax.
+  * Other type of structs; __Tuple Structures__. It's a simpler way for build structs, without a name variables, only the data type and how many attributes you wish in struct.
+  * Modifies the data struct in a variable.
   
    
   

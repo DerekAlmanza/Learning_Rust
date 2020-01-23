@@ -44,6 +44,7 @@ fn main() {
 
 }
 
+
 // We can build a function that returns a `User` instance with the given username and email.
 // As the variable names as the same, we can put only the variable name without the two points.
 // An example of this is the username variable and the email variable.
@@ -56,6 +57,7 @@ fn build_user(username: String, email: String) -> User {
     }
 }
 
+
 // To define a struct, we put in the keyboard `struct` and the name of structure.
 // Inside of the curly brackets, we define the names and the data types of the pieces of data.
 // Let's call this as "fields".
@@ -66,6 +68,7 @@ struct User {
     active: bool,
 }
 
+
 // We will make an example of structs and we will calculate the rectangle area.
 // We have to explicitly choose to make the functionality `debug` available for our structure.
 #[derive(Debug)]
@@ -73,6 +76,7 @@ struct RectangleDimensions {
     width: u32,
     height: u32,
 }
+
 
 // Function that calculates the rectangle area.
 fn area(rectangle: &RectangleDimensions) -> u32 {

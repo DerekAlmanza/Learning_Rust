@@ -57,5 +57,10 @@ A repository created for learn and review the basic concepts for Rust. This code
   * Other type of structs; __Tuple Structures__. It's a simpler way for build structs, without a name variables, only the data type and how many attributes you wish in struct.
   * Modifies the data struct in a variable.
   
+***
+* Methods.
+
+  Methods let you specify the behavior that instances of   your structs have, and associated functions let you   namespace functionality that is particular to your struct without having an instance available.
+  
    
   
